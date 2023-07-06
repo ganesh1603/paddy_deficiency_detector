@@ -16,10 +16,10 @@ st.write("This Model is not 100% accurate still under development by TEAM MASHAN
 
 import streamlit as st
 
-url = 'www.facebook.com'
+url = 'https://paddydeficiencydetectorpage1.streamlit.app/'
 
 st.markdown(f'''
-<a href={url}><button style="background-color:GreenYellow;">LINKEDIN</button></a>
+<a href={url}><button style="background-color:GreenYellow;">CONTINUE</button></a>
 ''',
 unsafe_allow_html=True)
 
