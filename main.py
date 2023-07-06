@@ -10,50 +10,6 @@ st.title("PADDY DEFICIENCY DETECTOR")
 
 
 
-def camera(opencv_image):
-    resize = tf.image.resize(opencv_image, (224,224))
-    resize=resize.numpy().astype(int)
-    return resize
-def file(opencv_image1):
-    #input size 244x244
-    resize= tf.image.resize(opencv_image1, (224,224))
-    #float32 is the input array datatype of model
-    resize=resize.numpy().astype("float32")
-    return resize
-
-  
-#new_model=models.load_model("F:\Seni_aids_proj\model.tflite")
-
-#loading model
-model=tf.lite.Interpreter(model_path="d:\downloads\model.tflite")
-input_details = model.get_input_details()
-output_details = model.get_output_details()
-model.allocate_tensors()
-
-def pred(img):
-    #input imagep
-    model.set_tensor(input_details[0]['index'], [img])
-    #prediction
-    model.invoke()
-    #output of prediction
-    output_arr=model.get_tensor(output_details[0]['index'])
-    if np.max(output_arr)>THRESHOLD:
-        print( np.argmax(output_arr))
-        return np.argmax(output_arr)
-    else:
-        return -1
-
-def iff(pred):
-    if pred==0:
-        st.write("NITROGEN DEFICIENCY")
-    elif pred==1:
-        st.write("POTTASIUM DEFICIENCY")
-    elif pred==2:
-        st.write("PHOSPHORUS DEFICIENCY")
-    else:
-        st.write("INCONCLUSIVE RESULT!!")
-
-  
 
 
 
