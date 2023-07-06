@@ -19,7 +19,7 @@ import streamlit as st
 url = 'https://paddydeficiencydetectorpage1.streamlit.app/'
 
 st.markdown(f'''
-<a href={url}><button style="background-color:GreenYellow;">CONTINUE</button></a>
+<a href={url}><button style="background-color:Blue;">CONTINUE</button></a>
 ''',
 unsafe_allow_html=True)
 
