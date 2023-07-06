@@ -13,7 +13,7 @@ st.subheader("TEAM MASHAN")
 
 
 
-st.write("Hi People,\n
+st.markdown("Hi People,\n
 This Web App Developed by TEAM MASHAN of Rajalakshmi Institute of Technology chennai.\n
 Ourself We are currently pursuing ARTIFICAL INTELLIGENCE...This is our first project based on CNN to detect paddy nutrient deficiency..\n
 This app is not 100% accurate ofcourse this app is still under development to include more feature in future\n
