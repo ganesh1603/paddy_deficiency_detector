@@ -16,9 +16,9 @@ st.subheader("TEAM MASHAN")
 st.write("Hi People,This Web App Developed by TEAM MASHAN of Rajalakshmi Institute of Technology chennai.Ourself We are currently pursuing ARTIFICAL INTELLIGENCE...")
 st.write("This is our first project based on CNN to detect paddy nutrient deficiency..")
 st.write("This app is not 100% accurate ofcourse this app is still under development to include more feature in future")
-                                                          st.write("THANK YOU,")
-                                                                      st.write("with love")
-                                                                      st.write("TEAM MASHAN")
+st.write("                                          THANK YOU,")
+st.write("                                                             with love")
+st.write("                                                            TEAM MASHAN")
 
 
 
