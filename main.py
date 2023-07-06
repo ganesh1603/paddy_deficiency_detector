@@ -8,6 +8,11 @@ THRESHOLD=0.5
 
 st.title("PADDY DEFICIENCY DETECTOR")
 
+model=tf.lite.Interpreter(model_path="model.tflite")
+input_details = model.get_input_details()
+output_details = model.get_output_details()
+model.allocate_tensors()
+
 def camera(opencv_image):
     resize = tf.image.resize(opencv_image, (224,224))
     resize=resize.numpy().astype(int)
@@ -23,10 +28,6 @@ def file(opencv_image1):
 #new_model=models.load_model("F:\Seni_aids_proj\model.tflite")
 
 #loading model
-model=tf.lite.Interpreter(model_path="model.tflite")
-input_details = model.get_input_details()
-output_details = model.get_output_details()
-model.allocate_tensors()
 
 def pred(img):
     #input imagep
