@@ -23,7 +23,7 @@ def file(opencv_image1):
 #new_model=models.load_model("F:\Seni_aids_proj\model.tflite")
 
 #loading model
-model=tf.lite.Interpreter(model_path="d:\downloads\model.tflite")
+model=tf.lite.Interpreter(model_path="model.tflite")
 input_details = model.get_input_details()
 output_details = model.get_output_details()
 model.allocate_tensors()
