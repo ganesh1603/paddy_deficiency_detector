@@ -9,6 +9,7 @@ import tensorflow as tf
 THRESHOLD=0.5
 
 st.title("PADDY DEFICIENCY DETECTOR")
+st.subheader("TEAM MASHAN")
 
 
 
