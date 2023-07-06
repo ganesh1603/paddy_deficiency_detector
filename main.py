@@ -9,7 +9,7 @@ import tensorflow as tf
 
 st.title("PADDY DEFICIENCY DETECTOR")
 st.subheader("TEAM MASHAN")
-st.write("This Model is not 100% accurate still under development by TEAM MASHAN")
+
 
 
 
