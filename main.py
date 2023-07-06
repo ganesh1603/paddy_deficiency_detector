@@ -13,12 +13,12 @@ st.write("This Model is not 100% accurate still under development by TEAM MASHAN
 
 
 
-st.write("Hi Peoples,This Web App Developed by TEAM MASHAN of Rajalakshmi Institute of Technology chennai.
-Ourself We are currently pursuing ARTIFICAL INTELLIGENCE...This is our first project based on CNN to detect paddy nutrient deficiency..
-This app is not 100% accurate ofcourse this app is still under development to include more feature in future
-                                                          THANK YOU,
-                                                                      with love
-                                                                      TEAM MASHAN")
+st.write("Hi Peoples,This Web App Developed by TEAM MASHAN of Rajalakshmi Institute of Technology chennai."
+"Ourself We are currently pursuing ARTIFICAL INTELLIGENCE...This is our first project based on CNN to detect paddy nutrient deficiency.."
+"This app is not 100% accurate ofcourse this app is still under development to include more feature in future"
+                                                          "THANK YOU,"
+                                                                      "with love"
+                                                                      "TEAM MASHAN")
 
 import streamlit as st
 
