@@ -79,6 +79,15 @@ else:
         iff(pred)
         st.image(resized.astype(int),channels="BGR")
 
+import streamlit as st
+
+url = 'www.facebook.com'
+
+st.markdown(f'''
+<a href={url}><button style="background-color:GreenYellow;">Stackoverflow</button></a>
+''',
+unsafe_allow_html=True)
+
 
 
 
