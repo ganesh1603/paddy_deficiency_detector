@@ -3,27 +3,14 @@ from PIL import Image
 import cv2
 import numpy as np
 import tensorflow as tf
-from pydrive.auth import GoogleAuth
-from pydrive.drive import GoogleDrive
 
-gauth = GoogleAuth()
-gauth.LocalWebserverAuth()  # This will open a web browser for authentication
-drive = GoogleDrive(gauth)
 
 
 THRESHOLD=0.5
 
 st.title("PADDY DEFICIENCY DETECTOR")
 
-def load_model():
-    file_id = 'y1-YNUK02A5RoWx9G-sRO3XsEz_d1D65g8'  # Replace with the file ID of your model on Google Drive
-    file_obj = drive.CreateFile({'id':file_id})
-    file_obj.GetContentFile('model.tflite')  # Download the model file from Drive
-    model = tf.lite.Interpreter(model_path='model.tflite')
-    model.allocate_tensors()
-    return model
 
-model = load_model()
 
 def camera(opencv_image):
     resize = tf.image.resize(opencv_image, (224,224))
@@ -40,6 +27,10 @@ def file(opencv_image1):
 #new_model=models.load_model("F:\Seni_aids_proj\model.tflite")
 
 #loading model
+model=tf.lite.Interpreter(model_path="d:\downloads\model.tflite")
+input_details = model.get_input_details()
+output_details = model.get_output_details()
+model.allocate_tensors()
 
 def pred(img):
     #input imagep
