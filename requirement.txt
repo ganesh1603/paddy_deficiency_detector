@@ -1,7 +1,14 @@
 pandas
 numpy
-opencv-python-headless
-cv2
 tensorflow==2.12.0
 streamlit
 Pillow
+opencv-python-headless==4.5.5.64
+mmdet
+mmocr
+paddleocr
+paddlepaddle
+mycolorpy
+plotly
+plotly-express
+mmcv-full --no-binary mmcv-full
