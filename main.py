@@ -10,6 +10,7 @@ THRESHOLD=0.5
 
 st.title("PADDY DEFICIENCY DETECTOR")
 st.subheader("TEAM MASHAN")
+st.write("This Model is not 100% accurate stil under development by TEAM MASHAN")
 
 
 
