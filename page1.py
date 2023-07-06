@@ -5,6 +5,8 @@ import numpy as np
 import tensorflow as tf
 
 
+
+THRESHOLD=0.5
 def camera(opencv_image):
     resize = tf.image.resize(opencv_image, (224,224))
     resize=resize.numpy().astype(int)
