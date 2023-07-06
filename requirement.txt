@@ -3,12 +3,4 @@ numpy
 tensorflow==2.12.0
 streamlit
 Pillow
-opencv-python-headless==4.8.0.74
-mmdet
-mmocr
-paddleocr
-paddlepaddle
-mycolorpy
-plotly
-plotly-express
-mmcv-full --no-binary mmcv-full
+opencv-python-headless
