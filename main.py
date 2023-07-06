@@ -49,9 +49,9 @@ def iff(pred):
     if pred==0:
         st.write("NITROGEN DEFICIENCY")
     elif pred==1:
-        st.write("POTTASIUM DEFICIENCY")
-    elif pred==2:
         st.write("PHOSPHORUS DEFICIENCY")
+    elif pred==2:
+        st.write("POTTASIUM DEFICIENCY")
     else:
         st.write("INCONCLUSIVE RESULT!!")
 
