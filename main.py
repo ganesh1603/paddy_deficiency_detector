@@ -25,7 +25,7 @@ st.write("                                                            TEAM MASHA
 url = 'https://paddydeficiencydetectorpage1.streamlit.app/'
 st.write("CLICK HERE TO CONTINUE")
 st.markdown(f'''
-<a href={url}><button style="background-color:black;"><text style="text-color:white;">PRESS ME</button></a>
+<a href={url}><button style="background-color:white;">PRESS ME</button></a>
 ''',
 unsafe_allow_html=True)
 
