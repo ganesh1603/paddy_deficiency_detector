@@ -62,7 +62,7 @@ if select=="camera":
         camera=camera(opencv_image)
         pred=pred(camera)
         iff(pred)
-        st.image(opencv_image,channels="RGB")
+        st.image(opencv_image,channels="BGR")
 
 else:
     uploaded_file = st.file_uploader("Choose a image file", type=["jpg","png"])
