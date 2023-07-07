@@ -8,8 +8,10 @@ import tensorflow as tf
 
 THRESHOLD=0.5
 def camera(opencv_image):
+    #input size 244x244
     resize = tf.image.resize(opencv_image, (224,224))
-    resize=resize.numpy().astype(int)
+    #float32 is the input array datatype of model
+    resize=resize.numpy().astype("float32")
     return resize
 def file(opencv_image1):
     #input size 244x244
