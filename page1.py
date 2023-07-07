@@ -36,7 +36,7 @@ def pred(img):
     model.invoke()
     #output of prediction
     output_arr=model.get_tensor(output_details[0]['index'])
-    if np.max(output_arr)>THRESHOLD:
+    if np.max(output_arr):
         print( np.argmax(output_arr))
         return np.argmax(output_arr)
     else:
