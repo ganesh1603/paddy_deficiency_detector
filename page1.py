@@ -29,7 +29,7 @@ model.allocate_tensors()
 
 def pred(img):
     #input imagep
-    model.set_tensor(input_details[0]['index'], [img])
+    model.set_tensor(input_details[0]['index'],[img])
     #prediction
     model.invoke()
     #output of prediction
